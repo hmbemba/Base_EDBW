@@ -7,7 +7,7 @@ pp = pprint.PrettyPrinter(indent=4)
 client = edgedb.create_client()
 
 InvoicesModel = EdgeDBModel(modelName='Invoices', client=client)
-InvoicesModel.addProperty(_name = 'three_word_name', _type = Type.str, _req = True)
+InvoicesModel.addProperty(_propertyName = 'three_word_name', _propertyType = Type.str, _req = True)
 
 #InvoicesModel.getByProperty(printStr=True, propName='three_word_name', propType=Type.str, _three_word_name='TameHolographcScallop')
 
